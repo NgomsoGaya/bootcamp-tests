@@ -1,6 +1,6 @@
 describe('Test my greet function' , function(){
     it("should return 'Hello, Raadiyah' when called with 'Raadiyah'" , function(){
-        assert.equal('Hello, Raadiyah', greet('Raadiyah'));
+        assert.deepEqual('Hello, Raadiyah', greet('Raadiyah'));
 
        // assert.deepEqual([2,2],[2,2]);//
     });
