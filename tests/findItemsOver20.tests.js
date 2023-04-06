@@ -11,4 +11,8 @@ describe('Test my findItemsOver20 function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it("should return an empty list when called with anything random", function(){
+        assert.deepEqual(findItemsOver20("some random text"), []);
+    });
+
 });

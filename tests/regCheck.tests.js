@@ -5,10 +5,14 @@ describe('Test my regCheck function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
-    it( "should return 'False' when called with number that ends with location", function(){
+    it( "should return 'False' when called with number that does not end with location", function(){
         assert.equal(regCheck('FGT 123 MM', 'MP'), false);
 
        // assert.deepEqual([2,2],[2,2]);//
+    });
+
+    it("should return 'False' when called with any string that is not a registration number", function(){
+        assert.equal(regCheck('South Side Sol', 'CA'), false);
     });
 
 });

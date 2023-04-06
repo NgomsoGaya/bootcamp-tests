@@ -11,4 +11,7 @@ describe('Test my isFromBellville function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it("should return 'False' when called with anything else random", function(){
+        assert.equal(false, isFromBellville('5555555'));
+    });
 });

@@ -11,4 +11,7 @@ describe('Test my allFromTown function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it("should return an empty array when called with a random string and a specific town", function(){
+        assert.deepEqual(allFromTown('some random text here', 'CA'), []);
+    });
 });

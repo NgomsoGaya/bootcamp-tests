@@ -11,4 +11,8 @@ describe('Test my findItemsOver function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it("should return an empty list when called with any random string", function(){
+        assert.deepEqual(findItemsOver("some random text"), []);
+    });
+
 });

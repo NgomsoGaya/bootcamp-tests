@@ -11,4 +11,7 @@ describe('Test my totalPhoneBill function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it("should return zero when called with a random string", function(){
+        assert.deepEqual(totalPhoneBill("watching youtube"), 'R0.00');
+    });
 });

@@ -13,4 +13,8 @@ describe('Test my mostProfitableDepartment function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it("should return none when passed with a random string", function(){
+        assert.deepEqual(mostProfitableDepartment("just another random text"), "none");
+    });
+
 });

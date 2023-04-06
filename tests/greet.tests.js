@@ -11,4 +11,8 @@ describe('Test my greet function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it ("should return 'Hello, Tendani' when called with 'Tendani'", function(){
+        assert.equal('Hello, Tendani',greet('Tendani'))
+    });
+
 });

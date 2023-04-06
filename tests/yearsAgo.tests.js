@@ -11,4 +11,8 @@ describe('Test my yearsAgo function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it("should return 0 when called with a year the same as the current year", function(){
+        assert.equal(yearsAgo(2023), 0);
+    });
+
 });

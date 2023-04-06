@@ -11,4 +11,7 @@ describe('Test my isWeekday function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it("should return 'False' when called with any random string", function(){
+        assert.equal(isWeekday("March"), false)
+    })
 });

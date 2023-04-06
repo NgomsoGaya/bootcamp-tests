@@ -15,5 +15,8 @@ function mostProfitableDepartment(salesData){
        dep = department;
       }
     }
+    if (dep == ""){
+      dep = "none"
+    }
    return dep;
  }

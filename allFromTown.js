@@ -6,9 +6,9 @@ function allFromTown(regNos,town){
       if (regList.startsWith(town)){
            allTowns.push(regList);
          }
-         if (allTowns == []){
-            "No registration number"
-        }
        }
+       if (allTowns == []){
+        "No registration number"
+    }
     return allTowns;
   }

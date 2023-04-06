@@ -11,4 +11,8 @@ describe('Test my fromWhere function' , function(){
        // assert.deepEqual([2,2],[2,2]);//
     });
 
+    it("should return from paarl when called with a string that starts with CJ", function(){
+       assert.deepEqual(fromWhere("CJ 123456"), "Paarl");
+    });
+
 });
